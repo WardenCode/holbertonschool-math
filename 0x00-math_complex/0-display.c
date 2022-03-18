@@ -16,18 +16,18 @@ void display_complex_number(complex c)
 	}
 	else if (c.im == 0)
 	{
-		printf("%0.f", c.re);
+		printf("%.9g", c.re);
 	}
 	else
 	{
 		if (c.im == -1)
-			printf("%.0f - i", c.re);
+			printf("%.9g - i", c.re);
 		else if (c.im == 1)
-			printf("%.0f + i", c.re);
+			printf("%.9g + i", c.re);
 		else if (c.im < 0)
-			printf("%.0f - %.0fi", c.re, -c.im);
+			printf("%.9g - %.9gi", c.re, -c.im);
 		else
-			printf("%.0f + %.0fi", c.re, c.im);
+			printf("%.9g + %.9gi", c.re, c.im);
 	}
 	printf("\n");
 }
